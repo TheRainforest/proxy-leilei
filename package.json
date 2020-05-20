@@ -1,7 +1,7 @@
 {
-  "name": "proxy-legolas-jmaughan",
+  "name": "proxy-leilei",
   "version": "1.0.0",
-  "description": "Jeff Maughan's proxy server for team legolas' FEC project.",
+  "description": "Built off Jeff Maughan's proxy server for team legolas' FEC project.",
   "main": "server/index.js",
   "scripts": {
     "start": "node server",
