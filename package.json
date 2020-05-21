@@ -4,8 +4,8 @@
   "description": "Built off Jeff Maughan's proxy server for team legolas' FEC project.",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server",
-    "server-dev": "nodemon server",
+    "start:dev": "nodemon server",
+    "start:prod": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

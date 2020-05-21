@@ -26,7 +26,12 @@ app.use('/api/related_products/:id', createProxyMiddleware({
   changeOrigin: true,
 }));
 
-app.use('/api/allreviews', createProxyMiddleware({
+app.use('/api/allreviews/:id', createProxyMiddleware({
+  target: reviewsURL,
+  changeOrigin: true,
+}));
+
+app.use('/api/allreviews/review/:id', createProxyMiddleware({
   target: reviewsURL,
   changeOrigin: true,
 }));
