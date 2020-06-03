@@ -1,6 +1,5 @@
 import http from 'k6/http';
 import { sleep, check } from 'k6';
-import { Rate } from 'k6/metrics';
 const { getRandom, review } = require('./k6TestData.js');
 
 export let options = {
