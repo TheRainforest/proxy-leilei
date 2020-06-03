@@ -1,26 +1,20 @@
 {
   "name": "proxy-leilei",
   "version": "1.0.0",
-  "description": "Built off Jeff Maughan's proxy server for team legolas' FEC project.",
+  "description": "Built off Jeff Maughan's FEC proxy server",
   "main": "server/index.js",
   "scripts": {
     "start:dev": "nodemon server",
-    "start:prod": "node server",
+    "start": "node server",
+    "stress": "k6 run server/k6proxy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hrr45-fec8-legolas/proxy-legolas-jmaughan.git"
-  },
-  "author": "Jeff Maughan",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hrr45-fec8-legolas/proxy-legolas-jmaughan/issues"
-  },
-  "homepage": "https://github.com/hrr45-fec8-legolas/proxy-legolas-jmaughan#readme",
+  "homepage": "",
   "dependencies": {
     "express": "^4.17.1",
     "http-proxy-middleware": "^1.0.3",
+    "newrelic": "^6.8.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack": "^4.43.0"

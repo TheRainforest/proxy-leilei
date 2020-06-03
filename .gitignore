@@ -3,3 +3,7 @@
 
 # public files
 /public/
+
+# Testing
+newrelic.js
+newrelic_agent.log
